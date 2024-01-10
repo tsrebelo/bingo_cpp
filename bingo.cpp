@@ -19,6 +19,7 @@ int main(){
 
         case 75:
         numerosMax = 75;
+        
         break;
 
         case 90:
@@ -34,7 +35,6 @@ int main(){
         break;
     }
 
-    
-    cout << "Sorteio de " << numerosMax << " números" << endl;
+
     return 0;
 }
