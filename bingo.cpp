@@ -8,12 +8,12 @@ int main(){
 
     srand((unsigned) time(0));
 
-    int opcao;
+    int sorteio;
     cout << "Escolhe o teu sorteio (75, 90 ou 100): " << endl;
-    cin >> opcao;
+    cin >> sorteio;
 
 
-    switch (opcao){
+    switch (sorteio){
         case 75:
     }
 
