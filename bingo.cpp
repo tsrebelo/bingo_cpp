@@ -2,9 +2,4 @@
 using namespace std;
 
 
-
-
-int main(){
-
-    return 0;
-}
+int myArray[] = {1 ,2 };
