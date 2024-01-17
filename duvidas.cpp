@@ -1,11 +1,9 @@
 #include <iostream>
-#include <ctime>
-#include <cstdlib>
-#include <vector>
-#include <algorithm>
-#include <fstream>
 using namespace std;
 
+//OPÇÕES DE MENU
+
+//cartões e cores
 string red          = "\u001b[31m";
 string blue         = "\u001b[34m";
 string green        = "\u001b[32m";
