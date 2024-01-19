@@ -31,7 +31,9 @@ string blue         = "\u001b[34m";
 string green        = "\u001b[32m";
 string reset        = "\u001b[0m";
 string bold         = "\u001b[1m";
+string blink        = "\u001b[5m";
 
+string figletFont   = "big"; //big, slant, small, mini, script
 
 typedef struct{
     int numero;
@@ -79,7 +81,7 @@ void opcoes(){
         system("clear || cls");
         cout << blue
         << "--------------------------------\n"
-        << blue << bold
+        << blue << bold << blink
         << "M E N U      P R I N C I P A L\n" << reset << blue
         << "--------------------------------" << endl
         << "1 - Sorteio Manual\n"

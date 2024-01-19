@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
-// int: ocupa 4 bytes(32 bites) 00000000 00000000 00000000 00000000
-//char: ocupa 1 byte(8bites) 00000000
+// int: ocupa, na memória, 4 bytes(32 bites) 00000000 00000000 00000000 00000000
+//char: ocupa, na memória, 1 byte(8 bites) 00000000
+//bool: ocupa, na memória, 1 byte(8 bites) 00000000(false) 00000001(true)
+//float: ocupa, na memória, 4 bytes(32 bites) 00000000 00000000 00000000 00000000
+//double: ocupa, na memória, 8 bytes(64 bites)
+//long: ocupa, na memória, 8 bytes(64 bites)
 
 //OPÇÕES DE MENU
 
