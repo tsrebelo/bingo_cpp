@@ -15,6 +15,8 @@ string blue         = "\u001b[34m";
 string green        = "\u001b[32m";
 string reset        = "\u001b[0m";
 string bold         = "\u001b[1m";
+string figletFont   = "big"; //big, slant, small, mini, script, smslant
+
 int tipoSorteio;
 
 void optionMenu(){
