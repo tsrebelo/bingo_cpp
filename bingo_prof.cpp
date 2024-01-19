@@ -89,7 +89,7 @@ void opcoes(){
         << "--------------------------------" << endl
         << bold << "Opção: " << reset << blue;
     cin >> tipoSorteio;
-    }   
+    }
 
 }
 

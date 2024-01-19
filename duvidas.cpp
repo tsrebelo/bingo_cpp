@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+// int: ocupa 4 bytes(32 bites) 00000000 00000000 00000000 00000000
+//char: ocupa 1 byte(8bites) 00000000
 
 //OPÇÕES DE MENU
 
