@@ -54,7 +54,7 @@ void centerString(string mensagem){
     }
     cout << blue;
     cout << mensagem << reset;
-    cout << blue << blue;
+    cout << blue << endl;
 }
 
 /**
