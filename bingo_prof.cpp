@@ -33,7 +33,7 @@ string reset        = "\u001b[0m";
 string bold         = "\u001b[1m";
 string blink        = "\u001b[5m";
 
-string figletFont   = "big"; //big, slant, small, mini, script
+string figletFont   = "big"; //big, slant, small, mini, script, smslant
 
 typedef struct{
     int numero;

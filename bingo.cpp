@@ -1,39 +1,27 @@
+/**
+ * @file bingo.cpp
+ * @author Telma Rebelo
+ * @brief Jogo do Bingo
+ * @date 2024-01-19
+ * 
+*/
+
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-#include <vector>
-#include <algorithm>
-#include <fstream>
+#include <iomanip>
+#include <unistd.h>
 using namespace std;
 
-string red          = "\u001b[31m";
-string blue         = "\u001b[34m";
-string green        = "\u001b[32m";
-string reset        = "\u001b[0m";
-string bold         = "\u001b[1m";
-int tipoSorteio;
+const int numLinhasCartao           = 5;
+const int numColunasCartao          = 5;
+const int numColunasPainel          = 20;
+const int intervlaoEntreBolas       = 500000;
+const int msgPause                  = 2000000;
 
-void optionMenu(){
-    do{
-        cout << blue
-        << "--------------------------------\n"
-        << blue << bold
-        << "M E N U      P R I N C I P A L\n" << reset << blue
-        << "--------------------------------" << endl
-        << "1 - Sorteio Manual\n"
-        << "2 - Sorteio Automático\n"
-        << "3 - Gerar Cartões\n"
-        << "4 - Sair\n"
-        << "--------------------------------" << endl
-        << bold << "Opção: " << reset << blue;
-    cin >> tipoSorteio;
-    } while(tipoSorteio < 1 || tipoSorteio > 4);
-}
+int sorteados       = 0;
+int numSorteado     = 0;
+int anterior        = 0;
 
-int main(){
+int numDeBolas, tipoSorteio, numDeCartoes;
 
-    optionMenu();
-    system("clear || cls");             //limpa o ecrã
-
-    return 0;
-}
