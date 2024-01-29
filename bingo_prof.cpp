@@ -14,6 +14,7 @@
 #include <unistd.h>
 using namespace std;
 
+
 const int numLinhasCartao       = 5;
 const int numColunasCartao      = 5;
 const int numColunasPainel      = 20;

@@ -2,7 +2,7 @@
  * @file bingo.cpp
  * @author Telma Rebelo
  * @brief Jogo do Bingo
- * @date 2024-01-19
+ * @date 24-01-19
  * 
 */
 
@@ -13,26 +13,26 @@
 #include <unistd.h>
 using namespace std;
 
-const int numLinhasCartao       = 5;
-const int numColunasCartao      = 5;
-const int numColunasPainel      = 20;
-const int intervlaoEntreBolas   = 500000;
-const int msgPause              = 2000000;
+const int numLinhasCartao = 5;
+const int numColunasCartao = 5;
+const int numColunasPainel = 20;
+const int intervaloEntreBolas = 500000;
+const int msgPause = 2000000;
 
-int sorteados       = 0;
-int numSorteado     = 0;
-int anterior        = 0;
+int sorteados = 0;
+int numSorteado = 0;
+int anterior = 0;
 
 int numDeBolas, tipoSorteio, numDeCartoes;
 
-string red          = "\u001b[31m";
-string blue         = "\u001b[34m";
-string green        = "\u001b[32m";
-string reset        = "\u001b[0m";
-string bold         = "\u001b[1m";
-string blink        = "\u001b[5m";
+string red = "\u001b[31m";
+string blue = "\u001b[34m";
+string green = "\u001b[32m";
+string reset = "\u001b[0m";
+string bold = "\u001b[1m";
+string blink = "\u001b[5m";
 
-string figletFont   = "big";
+string figletFont = "big";
 
 typedef struct{
     int numero;
@@ -41,6 +41,7 @@ typedef struct{
 
 bingoBool bingo[] = {};
 
+
 /**
  * @brief Função para centrar uma string no ecrã
  * 
@@ -48,13 +49,15 @@ bingoBool bingo[] = {};
 */
 void centerString(string mensagem){
     int pos = (int)((numColunasPainel*3 - (mensagem.length())) /2);
-    for(int i= 0; i < pos; i++){
+    for(int i = 0; i < pos; i++){
         cout << " ";
     }
     cout << blue;
     cout << mensagem << reset;
     cout << blue << endl;
 }
+
+
 
 /**
  * @brief Função para inializar o array de estruturas de dados
@@ -67,9 +70,9 @@ void initArray(){
     }
 }
 
+
 /**
- * @brief Função de apresentação dos cartões
- * 
+ * @brief Função que apresenta os cartões
 */
 void opcoes(){
 
@@ -89,7 +92,8 @@ void opcoes(){
         << "4 - Sair\n"
         << "--------------------------------" << endl
         << bold << "Opção: " << reset << blue;
-    cin >> tipoSorteio;
+    cin >> tipoSorteio;  
+
     }
 
 }
